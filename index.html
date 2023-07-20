@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <main id="wrapper">
+      <div class="container">
+        <header class="header">
+          <div class="logo">
+            <img src="./images/logo.svg" alt="Snap text" />
+          </div>
+          <div class="navbar">
+            <div class="nav-img">
+              <img src="./images/icon-menu.svg" alt="Three horizontal lines" />
+            </div>
+            <div class="navbar-content-desktop">
+              <div class="features-desktop">
+                <div class="features-ss-desktop">
+                  <a class="feat-text-desktop" href="#">Features</a>
+                  <div class="feat-img-desktop">
+                    <span class="dropdown-img-desktop">
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow facing down"
+                        class="arrow-down"
+                      />
+                    </span>
+                    <span class="dropdown-img-desktop"
+                      ><img
+                        src="./images/icon-arrow-up.svg"
+                        alt="Arrow facing up"
+                        class="arrow-up"
+                    /></span>
+                  </div>
+                </div>
+                <div class="feature-content-desktop">
+                  <div class="feat-desktop todo-list-desktop">
+                    <img src="./images/icon-todo.svg" alt="" />
+                    <p>Todo List</p>
+                  </div>
+                  <div class="feat-desktop calendar-desktop">
+                    <img src="./images/icon-calendar.svg" alt="" />
+                    <p>Calendar</p>
+                  </div>
+                  <div class="feat-desktop reminders-desktop">
+                    <img src="./images/icon-reminders.svg" alt="" />
+                    <p>Reminders</p>
+                  </div>
+                  <div class="feat-desktop planning-desktop">
+                    <img src="./images/icon-planning.svg" alt="" />
+                    <p>Planning</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="company-desktop">
+                <div class="company-ss-desktop">
+                  <a class="comp-text-desktop" href="#">Company</a>
+                  <div class="comp-img-desktop">
+                    <span class="dropdown-img"
+                      ><img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow facing down"
+                        class="arrow-down" /></span
+                    ><span class="dropdown-img"
+                      ><img
+                        src="./images/icon-arrow-up.svg"
+                        alt="Arrow facing up"
+                        class="arrow-up"
+                    /></span>
+                  </div>
+                </div>
+                <div class="company-content-desktop">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+
+              <a href="#">Careers</a>
+              <a href="#">About</a>
+            </div>
+            <div class="nav-btn-desktop">
+              <p class="login">Login</p>
+              <button type="submit" class="register">Register</button>
+            </div>
+            <nav class="navbar-content">
+              <div class="close-navbar">
+                <img src="./images/icon-close-menu.svg" alt="crossed lines" />
+              </div>
+              <div class="features">
+                <div class="features-ss">
+                  <a class="feat-text" href="#">Features</a>
+                  <div class="feat-img">
+                    <span class="dropdown-img">
+                      <img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow facing down"
+                        class="arrow-down"
+                      />
+                    </span>
+                    <span class="dropdown-img"
+                      ><img
+                        src="./images/icon-arrow-up.svg"
+                        alt="Arrow facing up"
+                        class="arrow-up"
+                    /></span>
+                  </div>
+                </div>
+                <div class="feature-content">
+                  <div class="feat todo-list">
+                    <img src="./images/icon-todo.svg" alt="" />
+                    <p>Todo List</p>
+                  </div>
+                  <div class="feat calendar">
+                    <img src="./images/icon-calendar.svg" alt="" />
+                    <p>Calendar</p>
+                  </div>
+                  <div class="feat reminders">
+                    <img src="./images/icon-reminders.svg" alt="" />
+                    <p>Reminders</p>
+                  </div>
+                  <div class="feat planning">
+                    <img src="./images/icon-planning.svg" alt="" />
+                    <p>Planning</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="company">
+                <div class="company-ss">
+                  <a class="comp-text" href="#">Company</a>
+                  <div class="comp-img">
+                    <span class="dropdown-img"
+                      ><img
+                        src="./images/icon-arrow-down.svg"
+                        alt="Arrow facing down"
+                        class="arrow-down" /></span
+                    ><span class="dropdown-img"
+                      ><img
+                        src="./images/icon-arrow-up.svg"
+                        alt="Arrow facing up"
+                        class="arrow-up"
+                    /></span>
+                  </div>
+                </div>
+                <div class="company-content">
+                  <a href="#">History</a>
+                  <a href="#">Our Team</a>
+                  <a href="#">Blog</a>
+                </div>
+              </div>
+              <div class="navbar-second-side">
+                <a href="#">Careers</a>
+                <a href="#">About</a>
+              </div>
+              <div class="nav-btn">
+                <p class="login">Login</p>
+                <button type="submit" class="register">Register</button>
+              </div>
+            </nav>
+          </div>
+        </header>
+        <div class="overlay hidden"></div>
+        <section class="body-work">
+          <div class="hero-image">
+            <img
+              src="./images/image-hero-mobile.png"
+              alt="different coloured circles connectors and a guy pressing while holding a laptop"
+              class="hero-img-mobile"
+            />
+            <img
+              src="./images/image-hero-desktop.png"
+              alt="different coloured circles connectors and a guy pressing while holding a laptop"
+              class="hero-img-desktop hidden"
+            />
+          </div>
+          <div class="hero-texts">
+            <h1 class="hero-title">Make remote work</h1>
+            <div class="second-text">
+              <p class="text">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar.
+              </p>
+              <button type="submit" class="learn-more">Learn more</button>
+            </div>
+            <footer class="footer">
+              <img
+                src="./images/client-databiz.svg"
+                alt="databiz text"
+                class="databiz"
+              />
+              <img
+                src="./images/client-audiophile.svg"
+                alt="audio text on top while phile text below"
+                class="audiophile"
+              />
+              <img
+                src="./images/client-meet.svg"
+                alt="two dots and meet text"
+                class="meet"
+              />
+              <img
+                src="./images/client-maker.svg"
+                alt="maker text and two circles"
+                class="maker"
+              />
+            </footer>
+          </div>
+          <footer class="footer-tablet">
+            <img
+              src="./images/client-databiz.svg"
+              alt="databiz text"
+              class="databiz"
+            />
+            <img
+              src="./images/client-audiophile.svg"
+              alt="audio text on top while phile text below"
+              class="audiophile"
+            />
+            <img
+              src="./images/client-meet.svg"
+              alt="two dots and meet text"
+              class="meet"
+            />
+            <img
+              src="./images/client-maker.svg"
+              alt="maker text and two circles"
+              class="maker"
+            />
+          </footer>
+        </section>
+      </div>
+    </main>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://twitter.com/sotundenuel">Sotunde Emmanuel Adefenwa</a>.
+    </div>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
