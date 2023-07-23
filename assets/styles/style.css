@@ -372,9 +372,9 @@ a:visited {
   z-index: 3;
 }
 
-/* -- MEDIA QUERY FOR SCREENS BIGGER THAN 415PX --- */
+/* -- MEDIA QUERY FOR SCREENS BIGGER THAN 500PX --- */
 
-@media (min-width: 450px) {
+@media (min-width: 500px) {
   .hero-image {
     width: 90%;
     margin: 0 auto;
