@@ -6,12 +6,12 @@ const closeNavBtn = document.querySelector(".close-navbar");
 const overlayEL = document.querySelector(".overlay");
 const navigationBarEL = document.querySelector(".navbar-content");
 
-const featToggle = document.querySelector(".feat-text");
+const featToggle = document.querySelector(".features-ss");
 const featureContent = document.querySelector(".feature-content");
 const featArrowUp = document.querySelector(".fu");
 const featArrowDown = document.querySelector(".fd");
 
-const compToggle = document.querySelector(".comp-text");
+const compToggle = document.querySelector(".company-ss");
 const companyContent = document.querySelector(".company-content");
 const compArrowUp = document.querySelector(".cu");
 const compArrowDown = document.querySelector(".cd");
