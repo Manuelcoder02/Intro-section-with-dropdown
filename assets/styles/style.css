@@ -12,13 +12,17 @@ img {
   max-width: 100%;
 }
 
+body {
+  font-family: "Epilogue";
+}
+
 .body-work img {
   background-color: #fff;
 }
 
 @font-face {
   font-family: "Epilogue";
-  src: url(./assets/webfonts/Epilogue-VariableFont_wght.ttf);
+  src: url(/assets/webfonts/Epilogue-VariableFont_wght.ttf);
 }
 
 .hidden {
@@ -72,10 +76,14 @@ img {
   color: hsl(0, 0%, 41%);
   font-weight: 500;
 }
-a {
+a:link {
   text-decoration: none;
   color: hsl(0, 0%, 41%);
   font-weight: 500;
+}
+
+a:visited {
+  color: hsl(0, 0%, 41%);
 }
 
 /* .navbar-content {
@@ -118,8 +126,13 @@ a {
   position: absolute;
   top: 8px;
 }
-.feat-img .arrow-up,
+/* .feat-img .arrow-up,
 .comp-img .arrow-up {
+  visibility: hidden;
+} */
+
+.fu,
+.cu {
   visibility: hidden;
 }
 
@@ -128,7 +141,7 @@ a {
   margin-right: 10px;
 }
 
-.features:hover .feature-content,
+/* .features:hover .feature-content,
 .company:hover .company-content {
   display: flex;
 }
@@ -139,15 +152,41 @@ a {
 .features:hover .arrow-down,
 .company:hover .arrow-down {
   visibility: hidden;
+} */
+
+.fff {
+  visibility: visible;
 }
-.feature-content {
+
+.ddd {
+  visibility: hidden;
+}
+
+.eee {
   display: flex;
-  flex-direction: column;
-  padding: 0.3em 0;
-  /* border: 3px solid green; */
+}
+.jjj {
   display: none;
 }
 
+.feature-content {
+  padding: 0.3em 0;
+  /* border: 3px solid green; */
+  display: none;
+  animation: grow;
+}
+
+.feature-content-nav {
+  display: flex;
+  flex-direction: column;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
+}
+
+.feature-content p,
+.feature-content-desktop p {
+  cursor: pointer;
+}
 .feat {
   display: flex;
   padding: 0.2em 0 0.2em 1.2em;
@@ -158,15 +197,30 @@ a {
 }
 
 .company-content {
+  display: none;
+}
+
+.company-content-nav {
   display: flex;
   flex-direction: column;
-  display: none;
+  animation: growDown 300ms ease-in-out forwards;
+  transform-origin: top center;
 }
 
 .company-content a {
   padding-left: 1.2em;
 }
-
+@keyframes growDown {
+  0% {
+    transform: scaleY(0);
+  }
+  80% {
+    transform: scaleY(1.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
 /* - SECOND SIDE NAVIGATION STYLING -*/
 .navbar-second-side {
   display: flex;
@@ -320,7 +374,7 @@ a {
 
 /* -- MEDIA QUERY FOR SCREENS BIGGER THAN 415PX --- */
 
-@media (min-width: 415px) {
+@media (min-width: 450px) {
   .hero-image {
     width: 90%;
     margin: 0 auto;
@@ -328,6 +382,10 @@ a {
   .nav-img {
     /* display: none; */
     visibility: hidden;
+  }
+
+  .nav-btn-desktop {
+    margin-top: -15px;
   }
 
   .header {
